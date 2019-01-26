@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2019 Aaron E-J
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the latest version of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
+the Free Software Foundation, or at least version 3.
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU AFFERO GENERAL PUBLIC LICENSE for more details.
+
+You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>Make Yourself at Home</title>
+		<script type="text/javascript" src="js/jquery/jquery.js"></script>
+    </head>
+    <body>
+        <div id='app' class="app">
+            <h1 class="title">Make Yourself at Home</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <a href="#start"><p class="event received">Begin?</p></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

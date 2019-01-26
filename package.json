@@ -1,7 +1,7 @@
 {
   "name": "athome",
   "version": "1.0.0",
-  "description": "About finding a hearth\u001b[1;6D\u001b[1;6D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[ in your home",
+  "description": "About finding a hearth in your home",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
