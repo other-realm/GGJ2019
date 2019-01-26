@@ -1,0 +1,27 @@
+{
+  "name": "athome",
+  "version": "1.0.0",
+  "description": "About finding a hearth\u001b[1;6D\u001b[1;6D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[ in your home",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/other-realm/GGJ2019.git"
+  },
+  "keywords": [
+    "game",
+    "Global Game Jam",
+    "home"
+  ],
+  "author": "Aaron E-J",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/other-realm/GGJ2019/issues"
+  },
+  "homepage": "https://github.com/other-realm/GGJ2019#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
