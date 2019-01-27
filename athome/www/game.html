@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2019 Aaron E-J
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the latest version of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
+the Free Software Foundation, or at least version 3.
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU AFFERO GENERAL PUBLIC LICENSE for more details.
+
+You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>Make Yourself at Home</title>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+	<script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+	<script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+	<script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+	<script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.1/dist/aframe-extras.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+	<a-scene>
+		<a-collada-model src="img/ComputerDesk.dae"></a-collada-model>
+		<!-- <a-entity camera look-controls wasd-controls></a-entity> -->
+		<a-entity id="rig" movement-controls position="-30 0 -30">
+			<a-entity camera position="-30 .2 -30" look-controls="pointerLockEnabled: true"></a-entity>
+		</a-entity>
+	</a-scene>
+	<embed name="music" src="audio/coffeeshopradio.draft.mp3" loop="true" hidden="true" autostart="true">
+	<!-- <audio src="audio/coffeeshopradio.draft.mp3"  loop="true" hidden="true" autostart="true">
+		<p>If you are reading this, it is because your browser does not support the audio element. </p>
+	</audio> -->
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
